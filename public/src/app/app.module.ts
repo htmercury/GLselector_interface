@@ -1,18 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
-import {MenuItem} from 'primeng/api';      
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// primeNG modules
+import { ButtonModule } from 'primeng/button';
+import { MenuModule } from 'primeng/menu';
+import { LoginComponent } from './login/login.component';
+import { InputTextModule } from 'primeng/inputtext';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AccordionModule,
-    BrowserAnimationsModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MenuModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

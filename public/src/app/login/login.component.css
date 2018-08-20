@@ -1,0 +1,19 @@
+.container {
+    width: 700px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    height: 175px;
+}
+
+input
+{
+    background: transparent;
+    border: none;
+}
