@@ -1,20 +1,44 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<p-table [columns]="cols" [value]="cars" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="onRowSelect($event)" [paginator]="true" rows="10">
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns">
+              {{col.header}}
+          </th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+      </tr>
+  </ng-template>
 
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="pi pi-plus" (click)="showDialogToAdd()" label="Add"></button>
+      </div>
+  </ng-template>
+</p-table>
+
+<p-dialog header="Car Details" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" [closable]="true" [width]="300">
+  <div class="ui-g ui-fluid" *ngIf="car">
+      <div class="ui-g-4"><label for="vin">Vin</label></div>
+      <div class="ui-g-8"><input pInputText id="vin" [(ngModel)]="car.vin" /></div>
+      
+      <div class="ui-g-4"><label for="year">Year</label></div>
+      <div class="ui-g-8"><input pInputText id="year" [(ngModel)]="car.year" /></div>
+      
+      <div class="ui-g-4"><label for="brand">Brand</label></div>
+      <div class="ui-g-8"><input pInputText id="brand" [(ngModel)]="car.brand" /></div>
+      
+      <div class="ui-g-4"><label for="color">Color</label></div>
+      <div class="ui-g-8"><input pInputText id="color" [(ngModel)]="car.color" /></div>
+  </div>
+  <p-footer>
+      <div class="ui-dialog-buttonpane ui-helper-clearfix">
+          <button type="button" pButton icon="pi pi-times" (click)="delete()" label="Delete"></button>
+          <button type="button" pButton icon="pi pi-check" (click)="save()" label="Save"></button>
+      </div>
+  </p-footer>
+</p-dialog>
