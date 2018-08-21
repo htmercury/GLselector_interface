@@ -8,7 +8,6 @@ declare var $: any;
 })
 export class HeadComponent implements OnInit {
   play = false;
-
   constructor() { }
 
   ngOnInit() {
@@ -38,8 +37,8 @@ export class HeadComponent implements OnInit {
       }
       self.play = !self.play;
     })
-
-    var video = document.querySelector("#videoElement");
+    var video:any;
+    video = document.querySelector("#videoElement");
 
 
   }

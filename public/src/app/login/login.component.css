@@ -1,9 +1,27 @@
+* {
+    color: #e0e0e0;
+
+}
+h2{
+    text-shadow: #21201a 1px 0 10px;
+
+}
 .container {
     width: 700px;
     height: 350px;
     margin: 0 auto;
+    align-content:center;
+    text-align:center;
 }
-
+.input{
+    display:block;
+    margin:0;
+    width:50%;
+    align-content:center;
+}
+#inputs{
+    align-content:center;
+}
 p {
     margin: 0;
     font-weight: 200;
@@ -13,10 +31,6 @@ img {
     height: 175px;
 }
 
-input {
-    background-color: rgba(72, 49, 47, 0.4);
-    border-radius: 15px;
-}
 
 #user-label {
     color: #f8f9fa;
