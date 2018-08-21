@@ -1,13 +1,11 @@
 .background {
     background: linear-gradient(
-            rgba(151,71,64,0.6),
-            rgba(147, 98, 93, 0.4)
+            rgba(151,71,64,0.4),
+            rgba(147, 98, 93, 0.2)
         ),
         url(../assets/img/background.jpg),
          no-repeat;
     background-size: cover;
+    background-position: bottom;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+semantic/dist/*
+semantic/gulpfile.js
+semantic/src/definitions
+semantic/src/semantic.less
+semantic/src/theme.less
+semantic/src/themes
+semantic/tasks
+!semantic/dist/semantic.min.css
+!semantic/dist/semantic.min.js

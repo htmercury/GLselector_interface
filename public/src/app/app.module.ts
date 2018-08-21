@@ -6,27 +6,23 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-// primeNG modules
-import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
 import { LoginComponent } from './login/login.component';
-import { InputTextModule } from 'primeng/inputtext';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeadComponent } from './head/head.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule,
-    MenuModule,
-    ButtonModule,
-    InputTextModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

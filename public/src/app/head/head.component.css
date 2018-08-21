@@ -1,0 +1,38 @@
+* {
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 4.6rem;
+    margin: 0;
+    text-shadow: #21201a 1px 0 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.header-btn {
+    margin: 10px 0;
+}
+
+#container {
+    margin: 0px auto;
+    width: 520px;
+    height: 395px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
