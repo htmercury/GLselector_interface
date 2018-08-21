@@ -14,6 +14,23 @@ h2 {
     margin: 0;
 }
 
+#cam {
+    margin: 10px 0;
+}
+
+#container {
+    margin: 0px auto;
+    width: 510px;
+    height: 385px;
+    border: 5px #58392b solid;
+    border-radius: 5px;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #584733;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -25,14 +42,12 @@ h2 {
     margin: 10px 0;
 }
 
-#container {
-    margin: 0px auto;
-    width: 520px;
-    height: 395px;
-    border: 10px #333 solid;
+.cam-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#videoElement {
-    width: 500px;
-    height: 375px;
-    background-color: #666;
+
+.active {
+    background-color: transparent;
 }
