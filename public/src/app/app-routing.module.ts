@@ -4,7 +4,11 @@ import { LoginComponent } from './login/login.component';
 import { HeadComponent } from './head/head.component';
 
 const routes: Routes = [
-  {path: '' ,component: HeadComponent}
+  {path: '' ,component: HeadComponent},
+  {
+    path: 'login',
+    component:LoginComponent
+}
 ];
 
 @NgModule({
