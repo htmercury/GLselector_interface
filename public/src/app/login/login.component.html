@@ -1,7 +1,28 @@
 <div class='container'>
   <h2>Login</h2>
-  <div id="inputs" class="ui input focus">
+  <form (submit) = "submitForm()">
+  <!-- <div id="inputsdiv" class="ui input focus">
     <input class="input" type="text" placeholder="Email">
     <input class="input" type="Password" placeholder="Password">
-  </div>
-</div>
+    <input id="submit" type="submit" value="Login">
+  </div> -->
+      <div class="column">
+        <div class="ui form">
+          <div class="field">
+            <label>Username</label>
+            <div class="ui left icon input">
+              <input type="text" placeholder="Username">
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="ui left icon input">
+              <input type="password">
+              <i class="lock icon"></i>
+            </div>
+          </div>
+          <div class="ui blue submit button">Login</div>
+        </div>
+      </div>
+  </form>
