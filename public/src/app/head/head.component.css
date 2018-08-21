@@ -1,0 +1,53 @@
+* {
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 4.6rem;
+    margin: 0;
+    text-shadow: #21201a 1px 0 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#cam {
+    margin: 10px 0;
+}
+
+#container {
+    margin: 0px auto;
+    width: 510px;
+    height: 385px;
+    border: 5px #58392b solid;
+    border-radius: 5px;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #584733;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.header-btn {
+    margin: 10px 0;
+}
+
+.cam-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active {
+    background-color: transparent;
+}
