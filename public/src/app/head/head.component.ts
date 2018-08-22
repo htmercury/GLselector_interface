@@ -12,33 +12,57 @@ export class HeadComponent implements OnInit {
 
   ngOnInit() {
     let self = this;
-    $('.cam-wrapper').toggle();
+    $('.content').toggle();
 
     $('#demo').click(function () {
-      $('.cam-wrapper').slideToggle(800);
+      $('.content').slideToggle(300);
     })
 
-    $(".ui.toggle.button").click(function () {
-      $(this).toggleClass('start');
-      $(".ui.toggle.button i").toggleClass('play stop');
-      if (self.play) {
-        video.srcObject = null;
+    $("#cam").click(function () {
+      // use MediaDevices API
+      // docs: https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
+      if (navigator.mediaDevices) {
+        // access the web cam
+        navigator.mediaDevices.getUserMedia({ video: true })
+          // permission granted:
+          .then(function (stream) {
+            $(this).toggleClass('start');
+            $("#cam i").toggleClass('play stop');
+            video.srcObject = stream;
+            let take_picture = document.getElementById('take-picture');
+            take_picture.addEventListener('click', takeSnapshot);
+            if (self.play) {
+              stream.getTracks().forEach(track => track.stop());
+              video.srcObject = null;
+            }
+            self.play = !self.play;
+          })
+          // permission denied:
+          .catch(function (error) {
+            document.body.textContent = 'Could not access the camera. Error: ' + error.name;
+          });
       }
-      else {
-        if (navigator.mediaDevices.getUserMedia) {
-          navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function (stream) {
-              video.srcObject = stream;
-            })
-            .catch(function (err0r) {
-              console.log("Something went wrong!");
-            });
-        }
+
+      function takeSnapshot() {
+        let img: any;
+        img = document.getElementById('capture');
+        var context;
+        var width = video.offsetWidth
+          , height = video.offsetHeight;
+
+        canvas = canvas || document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+
+        context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, width, height);
+
+        img.src = canvas.toDataURL('image/png');
       }
-      self.play = !self.play;
     })
-    var video:any;
+    let video: any;
     video = document.querySelector("#videoElement");
+    let canvas: any;
 
 
   }
