@@ -25,3 +25,8 @@ iframe {
 .item {
     background-color: rgba(224,225,226,0.3);
 }
+
+img{
+    outline:none;
+    cursor:pointer;
+}
