@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeadComponent } from './head/head.component';
 import { RegistrationComponent } from './registration/registration.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {  HttpClientModule } from '@angular/common/http';
     LoginComponent,
     NavbarComponent,
     HeadComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
