@@ -2,7 +2,9 @@
     color: #e0e0e0;
 
 }
-h2{
+
+/* Login Heading */
+h2{ 
     text-shadow: #21201a 1px 0 10px;
     margin-left:auto;
     margin-right:auto;
@@ -16,27 +18,48 @@ h2{
     align-content:center;
     text-align:center;
 }
+/* input boxes */
 .ui.input>input{
     display:block;
-    width:40%;
     margin-left:auto;
+    max-width:50%;
     margin-right:auto;
     align-content:center;
+    color:white;
     margin-top:15px;
-    opacity:0.1;
+    opacity:0.12;
     background:black;
     border:3px solid grey;
     border-radius:15px;
 }
+/* _ngcontent-c2{
+    color:white;
+} */
+
+/* input placeholder */
 .ui.input>input::placeholder{
     color:white;
 }
+
+/* border of input on click */
 .ui.input>input:focus{
     border:3px solid lightblue;
 }
-.field, input{
-    color:white;
+
+.ui.icon.input>i.icon{
+    margin-left:175px;
+    margin-top:6px;
 }
+
+/* Username and Password labels */
+.ui.form .field>label {
+    color:#e0e0e0;
+    margin:0;
+    padding:0;
+    margin-top:20px;
+}
+
+/* submit button */
 #submit{
 background:#8e4545;
 opacity:1;
@@ -44,28 +67,6 @@ color:white;
 text-align:center;
 border:none;
 width:20%;
-}
-#inputsdiv{
-    align-content:center;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
-}
-p {
-    margin: 0;
-    font-weight: 200;
-}
-
-img {
-    height: 175px;
-}
-
-
-#user-label {
-    color: #f8f9fa;
-    margin-left: 10px;
+border-radius:20px;
+height:25px;
 }
