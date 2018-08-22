@@ -34,9 +34,6 @@ h2{
 .ui.input>input:focus{
     border:3px solid lightblue;
 }
-.field, input{
-    color:white;
-}
 #submit{
 background:#8e4545;
 opacity:1;
