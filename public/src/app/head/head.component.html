@@ -6,29 +6,43 @@
     <button id='demo' class="ui inverted big basic button">Demo</button>
   </div>
 </div>
-<div class='content'>
-  <div class='cam-wrapper'>
-    <div class="container">
-      <video autoplay="true" id="videoElement"></video>
+<div class='body'>
+  <div class='content'>
+    <div class='cam-wrapper'>
+      <div class="container">
+        <video autoplay="true" id="videoElement"></video>
+      </div>
+      <div class='btn-options'>
+        <button id='cam' class="ui labeled black icon button toggle">
+          <i class="play icon"></i>
+          Try it!
+        </button>
+        <button id='take-picture' class="ui labeled black icon button toggle">
+          <i class="camera icon"></i>
+          Capture!
+        </button>
+      </div>
     </div>
-    <div class='btn-options'>
-      <button id='cam' class="ui labeled black icon button toggle">
-        <i class="play icon"></i>
-        Try it!
-      </button>
-      <button id='take-picture' class="ui labeled black icon button toggle">
-        <i class="camera icon"></i>
-        Capture!
+    <div class='cam-wrapper'>
+      <img class='container' id='capture' src="{{ src_img }}">
+      <button id='send' class="ui labeled black icon button toggle">
+        <i class="paper plane outline icon"></i>
+        Send it!
       </button>
     </div>
   </div>
-  <div class='cam-wrapper'>
-    <div class="container">
-      <img id='capture'>
+  <div class="ui longer modal">
+    <div class="header">Results</div>
+    <div class="image content">
+      <div class="image">
+        <img id='demo-img' src="{{ src_img }}">
+      </div>
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
-    <button id='cam' class="ui labeled black icon button toggle">
-      <i class="paper plane outline icon"></i>
-      Send it!
-    </button>
+    <div class="actions">
+      <div id='close' class="ui button">Close</div>
+    </div>
   </div>
 </div>

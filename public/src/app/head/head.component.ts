@@ -8,10 +8,13 @@ declare var $: any;
 })
 export class HeadComponent implements OnInit {
   play = false;
+  src_img = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
   constructor() { }
 
   ngOnInit() {
     let self = this;
+    $('.ui.longer.modal').modal('attach events', '#send', 'show');
+    $('.ui.longer.modal').modal('attach events', '#close', 'hide');
     $('.content').toggle();
 
     $('#demo').click(function () {
@@ -57,9 +60,11 @@ export class HeadComponent implements OnInit {
         context = canvas.getContext('2d');
         context.drawImage(video, 0, 0, width, height);
 
-        img.src = canvas.toDataURL('image/png');
+        self.src_img = canvas.toDataURL('image/png');
+        console.log(self.src_img);
       }
     })
+    
     let video: any;
     video = document.querySelector("#videoElement");
     let canvas: any;
