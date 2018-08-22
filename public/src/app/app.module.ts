@@ -10,11 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeadComponent } from './head/head.component';
 import { RegistrationComponent } from './registration/registration.component';
-<<<<<<< HEAD
 import { FooterComponent } from './footer/footer.component';
-=======
 import {  HttpClientModule } from '@angular/common/http';
->>>>>>> 9d84a100375b7b58b9c4f8041948f32bcba30633
 
 
 @NgModule({
