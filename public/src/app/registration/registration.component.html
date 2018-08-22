@@ -2,41 +2,55 @@
   <h2>Register a New User</h2>
   <form (submit) = "submitForm()">
   <div id="inputsdiv" class="ui input focus">
-    <input class="input" type="text" placeholder="Name">
-    <input class="input" type="text" placeholder="Email">
+    <input class="input" type="text" placeholder="Name"> -->
+    <!-- <input class="input" type="text" placeholder="Email">
     <input class="input" type="Password" placeholder="Password">
     <input class="input" type="Password" placeholder="Confirm Password">
     <input id="submit" type="submit" value="Register">
   </div>
   </form>
-</div> -->
-<div class="ui two column middle aligned very relaxed stackable grid">
-    <div class="column">
-      <div class="ui form">
-        <div class="field">
-          <label>Username</label>
-          <div class="ui left icon input">
-            <input type="text" placeholder="Username">
-            <i class="user icon"></i>
-          </div>
-        </div>
-        <div class="field">
-          <label>Password</label>
-          <div class="ui left icon input">
-            <input type="password">
-            <i class="lock icon"></i>
-          </div>
-        </div>
-        <div class="ui blue submit button">Login</div>
-      </div>
-    </div>
-    <div class="ui vertical divider">
-      Or
-    </div>
-    <div class="center aligned column">
-      <div class="ui big green labeled icon button">
-        <i class="signup icon"></i>
-        Sign Up
-      </div>
-    </div>
-  </div>
+</div> --> 
+<div class='container'>
+<div id="leftcolumn">
+<p id= "placeholder" >Placeholder</p>
+</div>
+
+<div id="rightcolumn">
+    
+        <h2>Register a New User</h2>
+        <form (submit) = "createUser()">
+        <!-- <div id="inputsdiv" class="ui input focus">
+          <input class="input" type="Password" placeholder="Password">
+        </div> -->
+            <div class="column">
+              <div class="ui form">
+                <div id= "firstname" class="field">
+                  <div class="ui left icon input">
+                      <input class="input" type="text" placeholder="First Name" name= "fname" [(ngModel)] = "newUser.fname">
+                      <i class="user icon"></i>
+                  </div>
+                </div>
+                <div id= "lastname" class="field">
+                    <div class="ui input">
+                        <input class="input" type="text" placeholder="Last Name"  name= "lname" [(ngModel)] = "newUser.lname">
+                    </div>
+                  </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <input class="input" type="text" placeholder="Email" name= "email" [(ngModel)] = "newUser.email">              
+                        <i class="envelope icon"></i>
+                    </div>
+                  </div>
+                <div id="password" class="field">
+                  <div class="ui left icon input">
+                    <input type="password" name= "password" [(ngModel)] = "newUser.password" >
+                    <i class="lock icon"></i>
+                  </div>
+                  </div>
+                <input id="submit" type="submit" value="Create Account">
+              </div>
+            </div>
+        </form>
+      
+</div>
+</div>
