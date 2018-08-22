@@ -1,0 +1,62 @@
+*{
+    color:white;
+}
+.container{
+    text-align:center;
+}
+
+.userinfo button{
+    display:block;
+    color:black;
+}
+
+#main{
+    width:100%;
+    margin:0px;
+}
+h1{
+    margin-bottom:20px;
+}
+.profilepicture{
+    margin-bottom:20px;
+}
+.left, .right{
+    display:inline-block;
+    vertical-align:top;
+}
+.left{
+    width:20%;
+    margin-left:40px;
+    margin-right:30px;
+    align-content:center;
+    text-align:center;
+    justify-content: center;
+}
+.right{
+    width:30%;
+    margin-left:30px;
+    margin-right:40px;
+    text-align:left;
+}
+#buttons{
+display:flex;
+justify-content:center;
+}
+#buttons button{
+    display:block;
+}
+.profilepicture{
+    height:300px;
+    border:3px solid green;
+}
+.glass{
+    height:100px;
+    width:100px;
+    outline:3px solid blue;
+    display:inline-block;
+    margin:6px;
+}
+
+h2{
+    margin-top:30px;
+}
