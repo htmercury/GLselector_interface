@@ -24,9 +24,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "semantic/dist/semantic.min.css"
+              "semantic/dist/semantic.min.css",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.min.js", "semantic/dist/semantic.min.js"]
+            "scripts": ["node_modules/jquery/dist/jquery.min.js", "semantic/dist/semantic.min.js", "node_modules/aos/dist/aos.js"]
           },
           "configurations": {
             "production": {
