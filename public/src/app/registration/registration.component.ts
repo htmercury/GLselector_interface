@@ -76,10 +76,11 @@ newUser:object = {fname:"", lname:"", email:"", password:""};
     
       $('.submit').on('click', function(p) {
         p.preventDefault();
-        // $('#personal').stop();
+        $('#personal').stop();
       });
     
     });
+    
   }
 
   createUser(){
