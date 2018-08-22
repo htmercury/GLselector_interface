@@ -12,6 +12,7 @@ import { HeadComponent } from './head/head.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FooterComponent } from './footer/footer.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {  HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     HeadComponent,
     RegistrationComponent,
+    DashboardComponent,
     FooterComponent
   ],
   imports: [

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
+declare var AOS: any;
 
 @Component({
   selector: 'app-head',
@@ -12,6 +13,7 @@ export class HeadComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    AOS.init();
     let self = this;
     $('.ui.longer.modal').modal('attach events', '#send', 'show');
     $('.ui.longer.modal').modal('attach events', '#close', 'hide');
@@ -25,6 +27,7 @@ export class HeadComponent implements OnInit {
       // use MediaDevices API
       // docs: https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
       if (navigator.mediaDevices) {
+        console.log(navigator.mediaDevices)
         // access the web cam
         navigator.mediaDevices.getUserMedia({ video: true })
           // permission granted:
