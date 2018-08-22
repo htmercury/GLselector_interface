@@ -6,12 +6,29 @@
     <button id='demo' class="ui inverted big basic button">Demo</button>
   </div>
 </div>
-<div class='cam-wrapper'>
-  <div id="container">
-    <video autoplay="true" id="videoElement"></video>
+<div class='content'>
+  <div class='cam-wrapper'>
+    <div class="container">
+      <video autoplay="true" id="videoElement"></video>
+    </div>
+    <div class='btn-options'>
+      <button id='cam' class="ui labeled black icon button toggle">
+        <i class="play icon"></i>
+        Try it!
+      </button>
+      <button id='take-picture' class="ui labeled black icon button toggle">
+        <i class="camera icon"></i>
+        Capture!
+      </button>
+    </div>
   </div>
-  <button id='cam' class="ui labeled black icon button toggle">
-    <i class="play icon"></i>
-    Try it!
-  </button>
+  <div class='cam-wrapper'>
+    <div class="container">
+      <img id='capture'>
+    </div>
+    <button id='cam' class="ui labeled black icon button toggle">
+      <i class="paper plane outline icon"></i>
+      Send it!
+    </button>
+  </div>
 </div>

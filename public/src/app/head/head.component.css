@@ -14,21 +14,30 @@ h2 {
     margin: 0;
 }
 
-#cam {
-    margin: 10px 0;
-}
-
-#container {
-    margin: 0px auto;
-    width: 510px;
-    height: 385px;
-    border: 5px #58392b solid;
-    border-radius: 5px;
+#cam, #take-picture {
+    margin-top: 10px;
 }
 #videoElement {
     width: 500px;
     height: 375px;
     background-color: #584733;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px;
+    width: 510px;
+    height: 385px;
+    border: 5px #58392b solid;
+    border-radius: 5px;
+}
+
+.btn-options {
+    display: flex;
 }
 
 .header {
