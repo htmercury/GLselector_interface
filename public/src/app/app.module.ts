@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeadComponent } from './head/head.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { FooterComponent } from './footer/footer.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -21,7 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NavbarComponent,
     HeadComponent,
     RegistrationComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

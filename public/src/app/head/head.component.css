@@ -22,6 +22,10 @@ h2 {
     height: 375px;
     background-color: #584733;
 }
+#demo-img {
+    width: 300px;
+    height: auto;
+}
 
 .content {
     display: flex;
@@ -59,4 +63,8 @@ h2 {
 
 .active {
     background-color: transparent;
+}
+
+.description p {
+    color: black;
 }
