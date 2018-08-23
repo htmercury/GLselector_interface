@@ -19,8 +19,8 @@ h2 {
     margin-bottom:20px;
 }
 #videoElement {
-    width: 500px;
-    height: 375px;
+    width: 340px;
+    height: 255px;
     background-color: lightpink;
 }
 #demo-img {
@@ -35,8 +35,8 @@ h2 {
 
 .container {
     margin: 10px;
-    width: 510px;
-    height: 385px;
+    width: 350px;
+    height: 265px;
     border: 5px white solid;
     border-radius: 5px;
 }
@@ -49,7 +49,7 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 80px;
+    margin: 75px;
     margin-bottom:20px;
 }
 
