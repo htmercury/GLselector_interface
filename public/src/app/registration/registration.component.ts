@@ -132,7 +132,38 @@ export class RegistrationComponent implements OnInit {
         $('#personal').stop();
       });
     ;
-    
+    $('.ui.form')
+      .form({
+        fields: {
+          name: {
+            identifier: 'name',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'Please enter your name'
+              }
+            ] 
+          },
+          email: {
+            identifier: 'email',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'Please enter your email'
+              }
+            ] 
+          },
+          password:{
+            identifier:'password',
+            rules: [
+              {
+                type:'empty',
+                prompt: 'Please create a password'
+              }
+            ]
+          }
+        }
+    });
   }
 
   createUser(){
