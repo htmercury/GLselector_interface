@@ -71,8 +71,20 @@ border:none;
 width:20%;
 border-radius:20px;
 height:25px;
+outline:none;
+cursor:pointer;
 }
 
 #link{
     margin-top:20px;
+}
+
+.ui.error.message{
+    background:transparent;
+    font-weight:bold;
+    font-size: 15px;
+    color:red;
+    border:red 2px solid;
+    outline:none;
+    border-radius:15px;
 }
