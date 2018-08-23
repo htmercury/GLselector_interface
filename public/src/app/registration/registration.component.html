@@ -65,14 +65,14 @@
       <div class="three ui  buttons center aligned grid container" style="margin:20px;">
 
 
-        <div class=" ui  big basic violet button" id="accountS">
+        <div class=" ui  big basic purple button" id="accountS">
 
           <div class="content " style="font-size:12px; color:white;">ACCOUNT SETUP</div>
         </div>
 
 
         <button class=" ui  big disabled blue basic button" id="socialP">
-             <div class="content" style="font-size:12px; color:white;">SOCIAL PROFILE</div>
+             <div class="content" style="font-size:12px; color:white;">TAKE A SELFIE</div>
              </button>
 
 
@@ -90,7 +90,7 @@
 
 
           <div class="ui centered header">
-            <h1 class="font" style="color:white;">Create your account</h1>
+            <h1 class="font" style="color:grey;">Create your account</h1>
           </div>
 
           <form class="ui form">
@@ -115,7 +115,7 @@
             </div>
 
             <div class="one ui buttons">
-              <button class="ui  inverted violet  medium button next1 ">Next</button>
+              <button class="ui  inverted purple  medium button next1 ">Next</button>
             </div>
 
           </form>
@@ -131,8 +131,55 @@
 
         <div class="ui center aligned  segment container " id="signUpBox" >
 
-
-          <div class="ui centered header">
+            <div class='header'>
+                <h1 data-aos='fade-right' data-aos-duration="1400" data-aos-delay="200">GLselector 0.19-alpha</h1>
+                <h2 data-aos='fade-left' data-aos-duration="1400" data-aos-delay="600">On the web, glasses selection</h2>
+                <div class='header-btn' data-aos='fade' data-aos-duration="1400" data-aos-delay="1400">
+                  <button [routerLink]="['/login']"class="ui inverted big button">Get Started</button>
+                  <button id='demo' class="ui inverted big basic button">Demo</button>
+                </div>
+              </div>
+              <div class='body'>
+                <div class='content'>
+                  <div class='cam-wrapper'>
+                    <div class="container">
+                      <video autoplay="true" id="videoElement"></video>
+                    </div>
+                    <div class='btn-options'>
+                      <button id='cam' class="ui labeled black icon button toggle">
+                        <i class="play icon"></i>
+                        Try it!
+                      </button>
+                      <button id='take-picture' class="ui labeled black icon button toggle">
+                        <i class="camera icon"></i>
+                        Capture!
+                      </button>
+                    </div>
+                  </div>
+                  <div class='cam-wrapper'>
+                    <img class='container' id='capture' src="{{ src_img }}">
+                    <button id='send' class="ui labeled black icon button toggle">
+                      <i class="paper plane outline icon"></i>
+                      Send it!
+                    </button>
+                  </div>
+                </div>
+                <div class="ui longer modal">
+                  <div class="header">Results</div>
+                  <div class="image content">
+                    <div class="image">
+                      <img id='demo-img' src="{{ src_img }}">
+                    </div>
+                    <div class="description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div id='close' class="ui button">Close</div>
+                  </div>
+                </div>
+              </div>
+          <!-- <div class="ui centered header">
             <h1 class="font" style="color:rgb(50,153,153);">Social Profile</h1>
           </div>
 
@@ -156,7 +203,7 @@
                 <i class="github icon"></i>
                 <input type="text" placeholder="github">
               </div>
-            </div>
+            </div> -->
 
             <!-- BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS-->
 
@@ -165,7 +212,7 @@
               <button class="ui  inverted violet  medium button submit">Submit</button>
             </div>
 
-          </form>
+          <!-- </form> -->
 
 
         </div>

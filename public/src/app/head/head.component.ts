@@ -64,7 +64,10 @@ export class HeadComponent implements OnInit {
         context.drawImage(video, 0, 0, width, height);
 
         self.src_img = canvas.toDataURL('image/png');
-        console.log(self.src_img);
+        // console.log(self.src_img);
+        var str= self.src_img;
+        var newstr = str.substring(22);
+        console.log(newstr);
       }
     })
     

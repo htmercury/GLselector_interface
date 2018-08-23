@@ -9,12 +9,14 @@ h2{
     margin-left:auto;
     margin-right:auto;
     width:50%;
+    margin-top:20px;
 
 }
 .container {
     width: 700px;
     height: 350px;
     margin: 0 auto;
+    margin-top:50px;
     align-content:center;
     text-align:center;
 }
@@ -61,7 +63,7 @@ h2{
 
 /* submit button */
 #submit{
-background:#8e4545;
+background:purple;
 opacity:1;
 color:white;
 text-align:center;
