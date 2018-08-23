@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 declare var $: any;
 declare var AOS: any;
 
@@ -10,7 +11,7 @@ declare var AOS: any;
 export class HeadComponent implements OnInit {
   play = false;
   src_img = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
-  constructor() { }
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
     AOS.init();
@@ -76,6 +77,14 @@ export class HeadComponent implements OnInit {
     let canvas: any;
 
 
+  }
+
+  sendImageFromService() {
+    console.log('click');
+    // let tempObservable = this._httpService.sendImage({img_data: this.src_img});
+    // tempObservable.subscribe((res: any) => {
+    //   console.log(res);
+    // })
   }
 
 }

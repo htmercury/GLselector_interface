@@ -18,5 +18,9 @@ export class HttpService {
     console.log('in server loginUser', userObj);
     return this._http.post('/loginuser', userObj)
   }
+
+  sendImage(imgObject){
+    return this._http.post('http://localhost:8000/api/demo', imgObject);
+  }
 }
 

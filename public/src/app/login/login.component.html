@@ -1,25 +1,29 @@
 <div class='container'>
   <h2>Login</h2>
-  <form (submit) = "loginUser()">
+  <form class ="ui form" (submit) = "loginUser()">
   <!-- <div id="inputsdiv" class="ui input focus">
     <input class="input" type="Password" placeholder="Password">
   </div> -->
       <div class="column">
         <div class="ui form">
+            <div class="ui error message"></div>
                         <div class="field">
                   <div class="ui left icon input">
-                    <i class="user icon"></i>
-                    <input type="text" placeholder="Name">
+                    <i class="envelope icon"></i>
+                    <input type="text" placeholder="Email" name="email">
                   </div>
                 </div>
             <div class="field">
               <div class="ui left icon input">
-                <i class="envelope icon"></i>
-                <input type="text" placeholder="Email">
+                <i class="lock icon"></i>
+                <input type="Password" placeholder="Password" name="password">
               </div>
             </div>
-          <input [routerLink] ="['/dashboard']" id="submit" type="submit" value="Login">
+          <input  [routerLink] ="['/dashboard']" id="submit" type="submit" value="Login">
         </div>
       </div>
   </form>
   <p id="link" >Don't Have an Account? <a [routerLink]="['/registration']">Register Here</a></p>
+
+
+  <!-- [routerLink] ="['/dashboard']" -->

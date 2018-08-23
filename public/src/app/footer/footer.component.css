@@ -3,6 +3,7 @@ i {
 }
 .footer {
     padding: 10px;
+    padding-bottom: 0;
 }
 h4{
     margin-bottom:0;

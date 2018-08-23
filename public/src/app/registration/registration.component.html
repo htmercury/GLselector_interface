@@ -63,25 +63,29 @@
 
 
   <div id="account">
-    <div class="ui center aligned segment container " id="signUpBox">
+    <div class="ui center aligned  container " id="signUpBox">
 
       <div class="ui centered header">
-        <h1 class="font" style="color:grey;">Create your account</h1>
+        <h1 class="font" style="color:white;">Create your account</h1>
       </div>
 
       <form id='signup-form' class="ui form">
         <div class='many_fields'>
-          <div class="field">
+          <div  id="fnamediv" class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" placeholder="Name">
+              <input id="fname" type="text" placeholder="First Name" name="name">
             </div>
           </div>
-          <p ngIf="namecheck">Name field must not be empty and contain at 3 letters</p>
+          <div  id="lnamediv" class="field">
+              <div class="ui left input">
+                <input id="lname" type="text" placeholder="Last Name" name="name">
+              </div>
+            </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="envelope icon"></i>
-              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Email" name="email">
             </div>
             <p ngIf="emailcheck">Name field must not be empty and contain at 3 letters</p>
           </div>
@@ -89,12 +93,13 @@
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" name="password">
             </div>
           </div>
         </div>
+        <div class="ui error message"></div>
         <div class='btns'>
-          <button class="ui inverted blue medium button next1 ">Next</button>
+          <input id="nextbutton" type="submit" value="Next" class="ui inverted blue medium button next1 ">
         </div>
 
       </form>
@@ -107,6 +112,8 @@
 
   <div id="social">
     <!-- THIS STARTS CAMERA SECTION -->
+    <h1 class="font" style="color:white;">Smile!</h1>
+
     <div class='content'>
       <div class='cam-wrapper'>
         <div class="container">
