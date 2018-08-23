@@ -1,4 +1,4 @@
-* {
+/* * {
     color: #e0e0e0;
 
 }
@@ -16,9 +16,9 @@
 #rightcolumn{
     margin-right:8%;
     margin-left:2%;
-}
+} */
 /* Login Heading */
-h2{ 
+/* h2{ 
     text-shadow: #21201a 1px 0 10px;
     margin-left:auto;
     margin-right:auto;
@@ -39,10 +39,10 @@ h2{
     margin: 0 auto;
     align-content:center;
     text-align:center;
-    margin-top:20px;
-}
+    margin-top:20px; */
+/* } */
 /* input boxes */
-.ui.input>input{
+/* .ui.input>input{
     display:block;
     margin-left:auto;
     max-width:100%;
@@ -59,29 +59,29 @@ h2{
 
 #password{
     margin-top:0px;
-}
+} */
 
 
 /* input placeholder */
-.ui.input>input::placeholder{
+/* .ui.input>input::placeholder{
     color:white;
 }
 .ui.form .field{
     margin-bottom:0px;
-}
+} */
 
 /* border of input on click */
-.ui.input>input:focus{
+/* .ui.input>input:focus{
     border:3px solid lightblue;
 }
 
 .ui.icon.input>i.icon{
     margin-left:1px;
     margin-top:1px;
-}
+} */
 
 /* Username and Password labels */
-.ui.form .field>label {
+/* .ui.form .field>label {
     color:#e0e0e0;
     margin:0;
     padding:0;
@@ -96,9 +96,9 @@ h2{
     align-content: center;
     flex:content;
     justify-content: center;
-}
+} */
 /* submit button */
-#submit{
+/* #submit{
 background:#8e4545;
 opacity:1;
 color:white;
@@ -111,4 +111,176 @@ height:30px;
 }
 #placeholder{
     margin-top:150px;
+} */
+
+
+
+
+*{
+    color: #e0e0e0;
+}
+
+#content {
+    margin-top: 90px;
+}
+  
+
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 850ms;
+}
+
+.font{
+    font-weight:300;
+    font-size:40px;
+    text-shadow:black;
+}
+#social{
+    display: none;
+    padding:20px;
+}
+
+#personal{
+    display:none;
+    padding:20px;
+}
+
+#account{
+    display: block;
+    padding:20px;
+}
+
+.ui.segment{
+    height:500px;
+    width:800px;
+}
+.ui.container{
+    width:800px;
+}
+
+#signUpBox{
+   background:white;
+    border:4px solid purple;
+    height:430px;
+    color:black;
+    border-radius:20px;
+}
+
+#signUpBox form {
+    display: flex;
+    flex-direction: column;
+    height: 315px;
+}
+
+#signUpBox .many_fields {
+    flex-grow: 1;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button {
+    width: 340px;
+}
+
+i{
+    background-color:black;
+    border-radius:20px;
+}
+.ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number]{
+    background:black;
+    opacity:0.12;
+    color:white;
+    border-radius:15px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    margin-left:3px;
+}
+
+.content{
+    color:white;
+}
+
+.ui.text.container{
+    border:none;
+    text-align:center;
+}
+
+/* CAM CSS */
+
+* {
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 4.6rem;
+    margin: 0;
+    text-shadow: #21201a 1px 0 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#cam, #take-picture, #send {
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+#videoElement {
+    width: 400px;
+    height: 275px;
+    background-color: lightpink;
+}
+#demo-img {
+    width: 300px;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px;
+    width: 410px;
+    height: 285px;
+    border: 5px white solid;
+    border-radius: 5px;
+}
+
+.btn-options {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px;
+    margin-bottom:20px;
+}
+
+.header-btn {
+    margin: 10px 0;
+}
+
+.cam-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.active {
+    background-color: transparent;
+}
+
+.description p {
+    color: black;
 }

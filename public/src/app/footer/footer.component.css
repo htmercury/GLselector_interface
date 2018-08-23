@@ -1,6 +1,18 @@
 i {
-    padding: 0 65px;
+    padding: 0 30px;
 }
 .footer {
-    padding: 30px;
+    padding: 10px;
+}
+h4{
+    margin-bottom:0;
+}
+.ui.inverted.header{
+    margin-bottom:2px;
+}
+div.four.wide.column{
+    padding-bottom:10px;
+}
+.ui.grid{
+    justify-content:center;
 }

@@ -14,13 +14,14 @@ h2 {
     margin: 0;
 }
 
-#cam, #take-picture {
+#cam, #take-picture, #send {
     margin-top: 10px;
+    margin-bottom:20px;
 }
 #videoElement {
     width: 500px;
     height: 375px;
-    background-color: #584733;
+    background-color: lightpink;
 }
 #demo-img {
     width: 300px;
@@ -36,7 +37,7 @@ h2 {
     margin: 10px;
     width: 510px;
     height: 385px;
-    border: 5px #58392b solid;
+    border: 5px white solid;
     border-radius: 5px;
 }
 
@@ -48,7 +49,8 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 80px;
+    margin-bottom:20px;
 }
 
 .header-btn {
@@ -60,6 +62,7 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
 
 .active {
     background-color: transparent;
