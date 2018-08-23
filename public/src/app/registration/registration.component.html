@@ -77,11 +77,13 @@
               <input type="text" placeholder="Name">
             </div>
           </div>
+          <p ngIf="namecheck">Name field must not be empty and contain at 3 letters</p>
           <div class="field">
             <div class="ui left icon input">
               <i class="envelope icon"></i>
               <input type="text" placeholder="Email">
             </div>
+            <p ngIf="emailcheck">Name field must not be empty and contain at 3 letters</p>
           </div>
 
           <div class="field">
