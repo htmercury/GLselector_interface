@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 import {ActivatedRoute} from '@angular/router';
 declare var $: any;
+declare var AOS: any;
+
 
 @Component({
   selector: 'app-registration',
@@ -15,17 +17,12 @@ export class RegistrationComponent implements OnInit {
   constructor( private _httpService:HttpService , private _route: ActivatedRoute ) { }
 
   ngOnInit() {
+    AOS.init();
     let self = this;
       // CAMERA JQUERY 
-      console.log('self', self);
       $("#cam").click(function () {
-        // use MediaDevices API
-        // docs: https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
         if (navigator.mediaDevices) {
-          console.log(navigator.mediaDevices)
-          // access the web cam
           navigator.mediaDevices.getUserMedia({ video: true })
-            // permission granted:
             .then(function (stream) {
               $(this).toggleClass('start');
               $("#cam i").toggleClass('play stop');
@@ -59,7 +56,6 @@ export class RegistrationComponent implements OnInit {
           context.drawImage(video, 0, 0, width, height);
   
           self.src_img = canvas.toDataURL('image/png');
-          // console.log(self.src_img);
           var str= self.src_img;
           var newstr = str.substring(22);
           console.log(newstr);
@@ -72,15 +68,15 @@ export class RegistrationComponent implements OnInit {
   
       // END CAMERA JQUERY 
 
-      var ct = 0;
+      var section = 0;
     
-      $('.next1').on('click', function(e) {
+      $('.next1').on('click', function(ev) {
     
-        e.preventDefault();
+        ev.preventDefault();
     
         $('#account').animate('slow', function() {
     
-          if (ct > 0) {
+          if (section > 0) {
             $('#account').removeClass('transition visible');
             $('#account').addClass('transition hidden');
     
@@ -93,15 +89,15 @@ export class RegistrationComponent implements OnInit {
           $('body').css('background-color', '#06000a');
           $('#social button').removeClass('inverted violet');
           $('#social button').addClass('inverted blue');
-          ct++;
+          section++;
     
         });
     
       });
     
-      $('.prev1').on('click', function(e) {
+      $('.prev1').on('click', function(ev) {
     
-        e.preventDefault();
+        ev.preventDefault();
         $('#accountS').removeClass('disabled');
         $('#socialP').addClass('disabled');
     
@@ -115,9 +111,9 @@ export class RegistrationComponent implements OnInit {
     
       });
     
-      $('.prev2').on('click', function(m) {
+      $('.prev2').on('click', function(ev) {
     
-        m.preventDefault();
+        ev.preventDefault();
         $('#details').addClass('disabled');
         $('#socialP').removeClass('disabled');
     
@@ -131,8 +127,8 @@ export class RegistrationComponent implements OnInit {
     
       });
     
-      $('.submit').on('click', function(p) {
-        p.preventDefault();
+      $('.submit').on('click', function(ev) {
+        ev.preventDefault();
         $('#personal').stop();
       });
     ;

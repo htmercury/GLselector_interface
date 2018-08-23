@@ -1,4 +1,3 @@
-
 <!-- <div class='container'>
 <div id="leftcolumn">
 <p id= "placeholder" >Placeholder</p>
@@ -6,10 +5,10 @@
 <div id="rightcolumn">
         <h2>Register a New User</h2>
         <form (submit) = "createUser()"> -->
-        <!-- <div id="inputsdiv" class="ui input focus">
+<!-- <div id="inputsdiv" class="ui input focus">
           <input class="input" type="Password" placeholder="Password">
         </div> -->
-            <!-- <div class="column">
+<!-- <div class="column">
               <div class="ui form">
                 <div id= "firstname" class="field">
                   <div class="ui left icon input">
@@ -41,109 +40,93 @@
 </div>
 </div> -->
 
-<!DOCTYPE html>
-<head>
-  <title>SignUp</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
-</head>
+<!-- <div class="ui centered  grid container"> -->
 
-  <!-- <div class="ui centered  grid container"> -->
-
-    <div class="ui text container">
+<div id='content' class="ui text container">
 
 
-      <!-- <div class="three ui  buttons center aligned grid container" style="margin:20px;"> -->
+  <!-- <div class="three ui  buttons center aligned grid container" style="margin:20px;"> -->
 
 
-        <div class=" ui  big basic purple button" id="accountS">
-
-          <div class="content " style="font-size:12px; color:white;">ACCOUNT SETUP</div>
-        </div>
-
-
-        <button class=" ui  big disabled blue basic button" id="socialP">
-             <div class="content" style="font-size:12px; color:white;">TAKE A SELFIE</div>
-             </button>
+  <div class="ui big purple button" id="accountS">
+    <div class="content " style="font-size:12px; color:white;">Account setup</div>
+  </div>
 
 
-      <!-- </div> -->
+  <button class="ui big disabled blue button" id="socialP">
+    <div class="content" style="font-size:12px; color:white;">Take a selfie</div>
+  </button>
 
 
-      <div class="row"></div>
-      <div class="row"></div>
+  <!-- </div> -->
 
 
-      <div id="account">
+  <div id="account">
+    <div class="ui center aligned segment container " id="signUpBox">
 
-
-        <div class="ui center aligned  segment container " id="signUpBox" >
-
-
-          <div class="ui centered header">
-            <h1 class="font" style="color:grey;">Create your account</h1>
-          </div>
-
-          <form class="ui form">
-              <div class="field">
-                  <div class="ui left icon input">
-                    <i class="user icon"></i>
-                    <input type="text" placeholder="Name">
-                  </div>
-                </div>
-            <div class="field">
-              <div class="ui left icon input">
-                <i class="envelope icon"></i>
-                <input type="text" placeholder="Email">
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="ui left icon input">
-                <i class="lock icon"></i>
-                <input type="password" placeholder="Password">
-              </div>
-            </div>
-
-            <div class="one ui buttons">
-              <button class="ui  inverted purple  medium button next1 ">Next</button>
-            </div>
-
-          </form>
-
-
-        </div>
-
+      <div class="ui centered header">
+        <h1 class="font" style="color:grey;">Create your account</h1>
       </div>
 
+      <form id='signup-form' class="ui form">
+        <div class='many_fields'>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <input type="text" placeholder="Name">
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="envelope icon"></i>
+              <input type="text" placeholder="Email">
+            </div>
+          </div>
 
-      <div id="social">
-<!-- THIS STARTS CAMERA SECTION -->
-                <div class='content'>
-                  <div class='cam-wrapper'>
-                    <div class="container">
-                      <video autoplay="true" id="videoElement"></video>
-                    </div>
-                    <div class='btn-options'>
-                      <button id='cam' class="ui labeled black icon button toggle">
-                        <i class="play icon"></i>
-                        Try it!
-                      </button>
-                      <button id='take-picture' class="ui labeled black icon button toggle">
-                        <i class="camera icon"></i>
-                        Capture!
-                      </button>
-                    </div>
-                  </div>
-                  <div class='cam-wrapper'>
-                    <img class='container' id='capture' src="{{ src_img }}">
-                  </div>
-                </div>
-                
-          <!-- <div class="ui centered header">
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="password" placeholder="Password">
+            </div>
+          </div>
+        </div>
+        <div class='btns'>
+          <button class="ui inverted blue medium button next1 ">Next</button>
+        </div>
+
+      </form>
+
+
+    </div>
+
+  </div>
+
+
+  <div id="social">
+    <!-- THIS STARTS CAMERA SECTION -->
+    <div class='content'>
+      <div class='cam-wrapper'>
+        <div class="container">
+          <video autoplay="true" id="videoElement"></video>
+        </div>
+        <div class='btn-options'>
+          <button id='cam' class="ui labeled black icon button toggle">
+            <i class="play icon"></i>
+            Try it!
+          </button>
+          <button id='take-picture' class="ui labeled black icon button toggle">
+            <i class="camera icon"></i>
+            Capture!
+          </button>
+        </div>
+      </div>
+      <div class='cam-wrapper'>
+        <img class='container' id='capture' src="{{ src_img }}">
+      </div>
+    </div>
+
+    <!-- <div class="ui centered header">
             <h1 class="font" style="color:rgb(50,153,153);">Social Profile</h1>
           </div>
 
@@ -169,21 +152,20 @@
               </div>
             </div> -->
 
-            <!-- BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS-->
+    <!-- BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS-->
 
-            <div class="two ui buttons">
-              <button class="ui  inverted violet  medium button prev1">Previous</button>
-              <button class="ui  inverted violet  medium button submit">Submit</button>
-            </div>
-
-          <!-- </form> -->
-
-<!-- ENDS CAMERA SECTION -->
-
-      </div>
-
-
-
+    <div class="two ui buttons">
+      <button class="ui medium button prev1">Previous</button>
+      <button class="ui medium button submit">Submit</button>
     </div>
-  <!-- </div> -->
 
+    <!-- </form> -->
+
+    <!-- ENDS CAMERA SECTION -->
+
+  </div>
+
+
+
+</div>
+<!-- </div> -->

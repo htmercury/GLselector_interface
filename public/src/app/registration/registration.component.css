@@ -117,21 +117,22 @@ height:30px;
 
 
 *{
-    color:white;
+    color: #e0e0e0;
 }
 
-
-
+#content {
+    margin-top: 90px;
+}
+  
 
 .in, .out {
     -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-duration: 500ms !important;
+    -webkit-animation-duration: 850ms;
 }
 
 .font{
     font-weight:300;
     font-size:40px;
-    color:white;
     text-shadow:black;
 }
 #social{
@@ -149,37 +150,42 @@ height:30px;
     padding:20px;
 }
 
-.text.container{
-
-    width:40%;
-
-}
-
 .ui.segment{
     height:500px;
     width:800px;
 }
 .ui.container{
-    width:500px;
-}
-
-#logo{
-    border:2px solid white;
-    border-radius: 10px;
-    color:white;
-    padding:15px;
-}
-#logo:hover{
-    box-shadow: 0px 0px 5px 5px white;
+    width:800px;
 }
 
 #signUpBox{
    background:white;
     border:4px solid purple;
-    height:327px;
+    height:430px;
     color:black;
     border-radius:20px;
 }
+
+#signUpBox form {
+    display: flex;
+    flex-direction: column;
+    height: 315px;
+}
+
+#signUpBox .many_fields {
+    flex-grow: 1;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button {
+    width: 340px;
+}
+
 i{
     background-color:black;
     border-radius:20px;
@@ -226,8 +232,8 @@ h2 {
     margin-bottom:20px;
 }
 #videoElement {
-    width: 500px;
-    height: 375px;
+    width: 400px;
+    height: 275px;
     background-color: lightpink;
 }
 #demo-img {
@@ -242,8 +248,8 @@ h2 {
 
 .container {
     margin: 10px;
-    width: 510px;
-    height: 385px;
+    width: 410px;
+    height: 285px;
     border: 5px white solid;
     border-radius: 5px;
 }
