@@ -1,0 +1,110 @@
+* {
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 4.6rem;
+    margin: 0;
+    text-shadow: #21201a 1px 0 10px;
+    text-align: center;
+}
+
+
+
+#wrapper{
+    margin: auto;
+    margin-top: 80px;
+    width: 70%;
+}
+
+
+.startedglasses{
+    height: 150px;
+    width: 450px;
+}
+
+.startedwelcome{
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    text-shadow: #21201a 1px 0 10px;
+}
+
+.startedmessage{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.2em;
+    width: 700px;
+    color: white;
+}
+
+.startedmessage2{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.8em;
+    width: 600px;
+    color: white;
+}
+
+.startedmessage3{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.5em;
+    width: 600px;
+    color: white;
+}
+
+.startedmessage4{
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.3em;
+    width: 600px;
+    color: white;
+    text-align: center;
+}
+
+.photobooth{
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.camera{
+    height: 30vh;
+    width: 25vw;
+    border: solid 3px #e0e0e0;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: lightpink;
+}
+
+.photo{
+    height: 30vh;
+    width: 25vw;
+    border: solid 3px #e0e0e0;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5vw;
+    vertical-align: top;
+    background-color: lavender; 
+}
+
+.beauty{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.notbeauty{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
