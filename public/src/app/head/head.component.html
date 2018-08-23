@@ -25,7 +25,7 @@
     </div>
     <div class='cam-wrapper'>
       <img class='container' id='capture' src="{{ src_img }}">
-      <button id='send' class="ui labeled black icon button toggle">
+      <button id='send' class="ui labeled black icon button toggle" (click)='sendImageFromService()'>
         <i class="paper plane outline icon"></i>
         Send it!
       </button>
