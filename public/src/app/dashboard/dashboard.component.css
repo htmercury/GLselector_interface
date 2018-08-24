@@ -74,7 +74,7 @@
 .glass{
     height:100px;
     width:100px;
-    outline:3px solid blue;
+    outline:3px solid #6dafff;
     display:inline-block;
     margin:6px;
     background-color:rgba(255,255,255,0.2);
@@ -83,4 +83,8 @@
 
 h2{
     margin-top:30px;
+}
+
+h4 span{
+    color:#f7c9c9;
 }
