@@ -22,6 +22,9 @@ h2 {
     width: 340px;
     height: 255px;
     background-color: lightpink;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
 }
 #demo-img {
     width: 300px;
