@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var AOS: any;
 @Component({
   selector: 'app-getstarted',
   templateUrl: './getstarted.component.html',
@@ -10,6 +10,7 @@ export class GetstartedComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    AOS.init();
   }
 
 }

@@ -31,6 +31,15 @@ h1 {
     text-shadow: #21201a 1px 0 10px;
 }
 
+.startedclose{
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: #21201a 1px 0 10px;
+    text-align: center;
+    margin-bottom: 250px;
+}
 .startedmessage{
     margin: auto;
     margin-top: 50px;
@@ -49,16 +58,16 @@ h1 {
 
 .startedmessage3{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 1.5em;
-    width: 600px;
+    width: 500px;
     color: white;
 }
 
 .startedmessage4{
     margin: auto;
     margin-top: 50px;
-    font-size: 1.3em;
+    font-size: 1.6em;
     width: 600px;
     color: white;
     text-align: center;
@@ -72,39 +81,69 @@ h1 {
 }
 
 .camera{
-    height: 30vh;
-    width: 25vw;
+    height: 32vh;
+    width: 26vw;
     border: solid 3px #e0e0e0;
     border-radius: 5px;
     display: inline-block;
     vertical-align: top;
-    background-color: lightpink;
+    background-color: rgb(182, 99, 111);
 }
 
 .photo{
-    height: 30vh;
-    width: 25vw;
+    height: 32vh;
+    width: 26vw;
     border: solid 3px #e0e0e0;
     border-radius: 5px;
     display: inline-block;
     margin-left: 5vw;
+    margin-bottom: 25px;
     vertical-align: top;
-    background-color: lavender; 
+    background-color: rgb(117, 117, 211); 
 }
 
 .beauty{
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: center;
     height: 150px;
     width: 150px;
+}
+
+.beautyword{
+    text-align: center;
+    color: white;
+    font-family: 'comic-sans', sans-serif;
+    font-size: 1.5em;
 }
 
 .notbeauty{
     margin: auto;
-    margin-top: 15px;
+    margin-top: 35px;
     text-align: center;
     height: 150px;
     width: 150px;
 }
 
+.dashboard{
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.glasses{
+    height: 75px;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.glassesX{
+    width: 650px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
