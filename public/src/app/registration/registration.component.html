@@ -1,49 +1,6 @@
-<!-- <div class='container'>
-<div id="leftcolumn">
-<p id= "placeholder" >Placeholder</p>
-</div>
-<div id="rightcolumn">
-        <h2>Register a New User</h2>
-        <form (submit) = "createUser()"> -->
-<!-- <div id="inputsdiv" class="ui input focus">
-          <input class="input" type="Password" placeholder="Password">
-        </div> -->
-<!-- <div class="column">
-              <div class="ui form">
-                <div id= "firstname" class="field">
-                  <div class="ui left icon input">
-                      <input class="input" type="text" placeholder="First Name" name= "fname" [(ngModel)] = "newUser.fname">
-                      <i class="user icon"></i>
-                  </div>
-                </div>
-                <div id= "lastname" class="field">
-                    <div class="ui input">
-                        <input class="input" type="text" placeholder="Last Name"  name= "lname" [(ngModel)] = "newUser.lname">
-                    </div>
-                  </div>
-                <div class="field">
-                    <div class="ui left icon input">
-                        <input class="input" type="text" placeholder="Email" name= "email" [(ngModel)] = "newUser.email">              
-                        <i class="envelope icon"></i>
-                    </div>
-                  </div>
-                <div id="password" class="field">
-                  <div class="ui left icon input">
-                    <input type="password" name= "password" [(ngModel)] = "newUser.password" >
-                    <i class="lock icon"></i>
-                  </div>
-                  </div>
-                <input [routerLink] ="['/dashboard']" id="submit" type="submit" value="Create Account">
-              </div>
-            </div>
-        </form>
-</div>
-</div> -->
-
-
 <!-- <div class="ui centered  grid container"> -->
 
-<div id='content' class="ui text container">
+<div id='content' class="ui text container" data-aos='fade' data-aos-duration="1400" data-aos-delay="200">
 
 
   <!-- <div class="three ui  buttons center aligned grid container" style="margin:20px;"> -->
@@ -63,36 +20,42 @@
 
 
   <div id="account">
-    <div class="ui center aligned segment container " id="signUpBox">
+    <div class="ui center aligned  container " id="signUpBox">
 
       <div class="ui centered header">
-        <h1 class="font" style="color:grey;">Create your account</h1>
+        <h1 class="font" style="color:white;">Create your account</h1>
       </div>
 
-      <form id='signup-form' class="ui form">
+      <form id='signup-form' class="ui form" autocomplete="off">
         <div class='many_fields'>
-          <div class="field">
+          <div  id="fnamediv" class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" placeholder="Name">
+              <input id="fname" type="text" placeholder="First Name" name="name">
             </div>
           </div>
+          <div  id="lnamediv" class="field">
+              <div class="ui left input">
+                <input id="lname" type="text" placeholder="Last Name" name="name">
+              </div>
+            </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="envelope icon"></i>
-              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Email" name="email">
             </div>
           </div>
 
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" name="password">
             </div>
           </div>
         </div>
+        <div class="ui error message"></div>
         <div class='btns'>
-          <button class="ui inverted blue medium button next1 ">Next</button>
+          <input id="nextbutton" type="submit" value="Next" class="ui inverted blue medium button next1 ">
         </div>
 
       </form>
@@ -105,6 +68,8 @@
 
   <div id="social">
     <!-- THIS STARTS CAMERA SECTION -->
+    <h1 class="font" style="color:white;">Smile!</h1>
+
     <div class='content'>
       <div class='cam-wrapper'>
         <div class="container">

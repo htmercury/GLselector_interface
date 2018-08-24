@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HeadComponent } from './head/head.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GetstartedComponent } from './getstarted/getstarted.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,13 @@ const routes: Routes = [
 {
   path:'dashboard',
   component:DashboardComponent
-}
+},
+{
+  path:'getstarted',
+  component:GetstartedComponent
+},
+
+
 ];
 
 @NgModule({

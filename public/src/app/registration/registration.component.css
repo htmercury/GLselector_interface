@@ -134,6 +134,7 @@ height:30px;
     font-weight:300;
     font-size:40px;
     text-shadow:black;
+    color:white;
 }
 #social{
     display: none;
@@ -159,8 +160,8 @@ height:30px;
 }
 
 #signUpBox{
-   background:white;
-    border:4px solid purple;
+   background:transparent;
+    border:none;
     height:430px;
     color:black;
     border-radius:20px;
@@ -169,7 +170,8 @@ height:30px;
 #signUpBox form {
     display: flex;
     flex-direction: column;
-    height: 315px;
+    height: 370px;
+    padding-top:40px;
 }
 
 #signUpBox .many_fields {
@@ -191,8 +193,8 @@ i{
     border-radius:20px;
 }
 .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number]{
-    background:black;
-    opacity:0.12;
+    background-color: rgba(0,0,0,0.12);
+    opacity: 0.6;   
     color:white;
     border-radius:15px;
     border-top-left-radius:0px;
@@ -209,6 +211,9 @@ i{
     text-align:center;
 }
 
+#nextbutton.ui.inverted.blue.medium.button.next1{
+    width:350px;
+}
 /* CAM CSS */
 
 * {
@@ -283,4 +288,46 @@ h2 {
 
 .description p {
     color: black;
+}
+
+.ui.error.message{
+    background:transparent;
+    font-weight:bold;
+    font-size: 15px;
+    color:red;
+    border:red 2px solid;
+    outline:none;
+    border-radius:15px;
+}
+
+#fname[_ngcontent-c3], #lname[_ngcontent-c3]{
+    display:inline-block;
+    width:20%;
+}
+
+/* #fname[_ngcontent-c3]{
+    background:black;
+    opacity:0.12
+} */
+#fname[_ngcontent-c3][_ngcontent-c3], #lname[_ngcontent-c3][_ngcontent-c3]{
+    display:inline-block;
+    max-width:100%;
+    margin:0px;
+}
+#fname[_ngcontent-c3][_ngcontent-c3]{
+    margin-left:3px;
+}
+#lname{
+display:inline-block;   
+border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius: 15px;
+}
+
+#lnamediv{
+    margin-left:1px;
+}
+#fnamediv, #lnamediv{
+    display:inline-block;
+    width:49.9%;
 }

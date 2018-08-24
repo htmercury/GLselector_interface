@@ -29,9 +29,8 @@ h2{
     align-content:center;
     color:white;
     margin-top:15px;
-    opacity:0.12;
-    background:black;
-    border:3px solid grey;
+    opacity:0.6;
+    background-color: rgba(0, 0, 0, 0.12);
     border-radius:15px;
 }
 /* _ngcontent-c2{
@@ -41,11 +40,6 @@ h2{
 /* input placeholder */
 .ui.input>input::placeholder{
     color:white;
-}
-
-/* border of input on click */
-.ui.input>input:focus{
-    border:3px solid lightblue;
 }
 
 .ui.icon.input>i.icon{
@@ -71,8 +65,20 @@ border:none;
 width:20%;
 border-radius:20px;
 height:25px;
+outline:none;
+cursor:pointer;
 }
 
 #link{
     margin-top:20px;
+}
+
+.ui.error.message{
+    background:transparent;
+    font-weight:bold;
+    font-size: 15px;
+    color:red;
+    border:red 2px solid;
+    outline:none;
+    border-radius:15px;
 }
