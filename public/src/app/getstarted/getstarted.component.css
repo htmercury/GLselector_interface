@@ -31,15 +31,6 @@ h1 {
     text-shadow: #21201a 1px 0 10px;
 }
 
-.startedclose{
-    margin: auto;
-    text-align: center;
-    font-size: 2.5em;
-    margin-top: 20px;
-    text-shadow: #21201a 1px 0 10px;
-    text-align: center;
-    margin-bottom: 250px;
-}
 .startedmessage{
     margin: auto;
     margin-top: 50px;
@@ -136,7 +127,7 @@ h1 {
 
 .glasses{
     height: 75px;
-    width: 150px;
+    width: 125px;
     margin-left: 10px;
     margin-bottom: 20px;
 }
@@ -146,4 +137,18 @@ h1 {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+.startedclose{
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: #21201a 1px 0 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.closing{
+    margin-bottom: 150px;
 }
