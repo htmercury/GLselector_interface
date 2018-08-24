@@ -81,10 +81,10 @@ export class HeadComponent implements OnInit {
 
   sendImageFromService() {
     console.log('click');
-    // let tempObservable = this._httpService.sendImage({img_data: this.src_img});
-    // tempObservable.subscribe((res: any) => {
-    //   console.log(res);
-    // })
+    let tempObservable = this._httpService.sendImage({img_data: this.src_img.substring(22)});
+    tempObservable.subscribe((res: any) => {
+      console.log(res);
+    })
   }
 
 }

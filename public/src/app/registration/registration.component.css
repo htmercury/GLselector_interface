@@ -193,8 +193,8 @@ i{
     border-radius:20px;
 }
 .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number]{
-    background:black;
-    opacity:0.12;
+    background-color: rgba(0,0,0,0.12);
+    opacity: 0.6;   
     color:white;
     border-radius:15px;
     border-top-left-radius:0px;
