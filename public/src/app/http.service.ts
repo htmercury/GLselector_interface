@@ -20,7 +20,7 @@ export class HttpService {
   }
 
   sendImage(imgObject){
-    return this._http.post('http://localhost:8000/api/demo', imgObject);
+    return this._http.post('http://localhost:8000/demo', imgObject);
   }
 }
 

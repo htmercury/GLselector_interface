@@ -14,10 +14,20 @@
     display:block;
     color:black;
 }
+.glass img{
+    height:auto;
+    width:100%;
+}
 
 #main{
     width:100%;
     margin:0px;
+}
+.glass[_ngcontent-c3]{
+    vertical-align:top;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .ui.header {
     margin-top: 20px;
