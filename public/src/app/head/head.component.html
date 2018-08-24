@@ -2,7 +2,7 @@
   <h1 data-aos='fade-right' data-aos-duration="1400" data-aos-delay="200">GLselector 0.19-alpha</h1>
   <h2 data-aos='fade-left' data-aos-duration="1400" data-aos-delay="600">On the web, glasses selection</h2>
   <div class='header-btn' data-aos='fade' data-aos-duration="1400" data-aos-delay="1400">
-    <button [routerLink]="['/getstarted']"class="ui inverted big button">Get Started</button>
+    <button [routerLink]="['/getstarted']" class="ui inverted big button">Get Started</button>
     <button id='demo' class="ui inverted big basic button">Demo</button>
   </div>
 </div>
@@ -35,10 +35,59 @@
     <div class="header">Results</div>
     <div class="image content">
       <div class="image">
-        <img id='demo-img' src="{{ src_img }}">
+        <img id='demo-img' src="{{ res_img }}">
       </div>
       <div class="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="error" *ngIf="errors">
+          ERROR:
+          <p *ngFor="let part of Object.keys(errors)">
+            {{errors[part]}}
+          </p>
+        </div>
+        <div id="faceshape" *ngIf="face_shape">
+          YOUR FACE SHAPE:
+          <p *ngIf="face_shape">
+            {{face_shape}}
+          </p>
+          DESCRIPTION:
+          <p *ngIf="face_shape =='oval'">
+            An Oval face has slightly wider cheekbones and a gentle narrowing at the forehead and jaw.
+          </p>
+          <p *ngIf="face_shape =='heart'">
+            A Heart face is widest at the forehead and gradually narrows through to the jaw.
+          </p>
+          <p *ngIf="face_shape =='diamond'">
+            A Diamond, or Triangle, face is widest at the jaw and gradually narrows through to the forehead.
+          </p>
+          <p *ngIf="face_shape =='square'">
+            A Square face has more angular lines with equally wide cheekbones, forehead and jaw.
+          </p>
+          <p *ngIf="face_shape =='round'">
+            A Round face has softer angles with slightly wider cheekbones and an equally wide forehead and jaw.
+          </p>
+          RECOMMENDATION: 
+          <p *ngIf="face_shape =='oval'">
+              We recommend rectangle, square, wayfarer, browline, oval, aviator, round, geometric, and wrap frames.
+              Find frames for oval faces <a target = "_blank" href="https://www.coastal.com/glasses/oval-face">here</a>!
+            </p>
+            <p *ngIf="face_shape =='heart'">
+                We recommend rectangle, aviator, geometric, and wrap frames.
+                Find frames for heart faces <a target = "_blank" href="https://www.coastal.com/glasses/heart-face">here</a>!
+            </p>
+            <p *ngIf="face_shape =='diamond'">
+                We recommend square, wayfarer, aviator, round, geometric, and wrap frames.
+                Find frames for diamond faces <a target = "_blank" href="https://www.coastal.com/glasses/triangle-face">here</a>!
+            </p>
+            <p *ngIf="face_shape =='square'">
+                We recommend wayfarer, browline, oval, aviator, round, and wrap frames.
+                Find frames for square faces <a target = "_blank" href="https://www.coastal.com/glasses/square-face">here</a>!
+            </p>
+            <p *ngIf="face_shape =='round'">
+                We recommend rectangle, square, aviator, and wrap frames.
+                Find frames for round faces <a target = "_blank" href="https://www.coastal.com/glasses/round-face">here</a>!
+            </p>
+            <p>Please Visit This Website For More Glasses: <a target = "_blank" href="https://www.coastal.com/eyewear"> Coastal Eyewear</a></p>
+        </div>
       </div>
     </div>
     <div class="actions">

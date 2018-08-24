@@ -11,6 +11,10 @@ declare var AOS: any;
 export class HeadComponent implements OnInit {
   play = false;
   src_img = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+  errors=null;
+  face_shape=null;
+  Object=Object;
+  res_img= "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
@@ -84,16 +88,27 @@ export class HeadComponent implements OnInit {
     var newstr = this.src_img.substring(22);
     let tempObservable = this._httpService.sendImage({img_data: newstr});
     tempObservable.subscribe((res: any) => {
-      this.src_img = "data:image/jpeg;base64," + res.image;
+      console.log('this is the error', res.error)
+      this.res_img = "data:image/jpeg;base64," + res.image;
       console.log(this.src_img);
-      if (res.error == {}){
-        console.log('no errors');
+      if (Object.keys(res.error).length != 0){
+        console.log('response error', res.error)
+        this.errors= res.error;
+        this.face_shape = null;
+        console.log('there are some errors')
+        
       }
       else{
-        console.log('there are some errors')
+        this.errors = null;
+        this.face_shape = res.shape;
+        console.log('in if', res.shape)
+        console.log('no errors');
+        
       }
       console.log('this is the response', res);
     })
   }
+
+
 
 }
