@@ -4,6 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 
 declare var $:any;
+declare var AOS: any;
 
 @Component({
   selector: 'app-login',
@@ -15,6 +16,7 @@ User:object ={name:"", password:""}
   constructor( private _httpService:HttpService, private _route: ActivatedRoute) { }
 
   ngOnInit() {
+    AOS.init();
     $('.ui.form')
       .form({
         fields: {

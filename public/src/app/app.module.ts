@@ -13,6 +13,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { FooterComponent } from './footer/footer.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GetstartedComponent } from './getstarted/getstarted.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeadComponent,
     RegistrationComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    GetstartedComponent
   ],
   imports: [
     BrowserModule,
