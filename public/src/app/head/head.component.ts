@@ -81,7 +81,6 @@ export class HeadComponent implements OnInit {
 
   sendImageFromService() {
     console.log('click');
-<<<<<<< HEAD
     var newstr = this.src_img.substring(22);
     let tempObservable = this._httpService.sendImage({img_data: newstr});
     tempObservable.subscribe((res: any) => {
@@ -94,11 +93,6 @@ export class HeadComponent implements OnInit {
         console.log('there are some errors')
       }
       console.log('this is the response', res);
-=======
-    let tempObservable = this._httpService.sendImage({img_data: this.src_img.substring(22)});
-    tempObservable.subscribe((res: any) => {
-      console.log(res);
->>>>>>> a2b2a81e1838e9579125961312062fa5560d5330
     })
   }
 
