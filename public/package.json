@@ -25,7 +25,7 @@
     "jquery": "^3.3.1",
     "less": "^2.7.3",
     "rxjs": "^6.0.0",
-    "semantic-ui": "^2.3.3",
+    "semantic-ui": "^2.5.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
